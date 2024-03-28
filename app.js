@@ -30,3 +30,25 @@ function datetimefun(){
     let time = hours + ':' + minutes + ':' + seconds;
     document.write(`Current time is : ${time}`);
 }
+// Write a JavaScript program to check the total marks
+// of a student in various examinations. The student
+
+// will get A+ grade if the total marks are in the range 89..100 inclusive, 
+//if the examination is
+// "Final-exam." the student will get A+ grade and total marks must be greater
+// than or equal to 90. Return
+// true if the student get A+ grade or false otherwise.
+function grading(total_marks,examination){
+    let grade;
+    if(total_marks>=89 && total_marks<=100 && examination!=="Final") {
+        grade="A+";
+    }
+    else if(total_marks>=90 && total_marks<=100 && examination==="Final"){
+        grade="A+"
+    }
+    if(grade==="A+"){
+        return true;
+    }else{
+        return false;
+    }
+}
